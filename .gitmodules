@@ -1,0 +1,3 @@
+[submodule "MaskGame/Assets/Scripts/UUtils"]
+	path = MaskGame/Assets/Scripts/UUtils
+	url = git@github.com:YvensFaos/UUtils.git
