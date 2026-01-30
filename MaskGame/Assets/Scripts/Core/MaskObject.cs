@@ -1,5 +1,8 @@
 using System.Collections.Generic;
+using NaughtyAttributes;
+using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UUtils;
 
 namespace Core
@@ -7,6 +10,10 @@ namespace Core
     public class MaskObject : MonoBehaviour
     {
         [SerializeField] private List<MaskPartSpritePair> partSpritePair;
+        [SerializeField] private bool interactive;
+        [ShowIf("interactive")]
+        [SerializeField] private Key key;
+        [SerializeField] private TextMeshProUGUI keyText;
 
         private void Awake()
         {
@@ -19,12 +26,39 @@ namespace Core
             }
         }
 
+        private void Start()
+        {
+            if (interactive)
+            {
+                keyText.text = key.ToString().ToLower();
+            }
+            else
+            {
+                keyText.gameObject.SetActive(false);
+            }
+        }
+
         public void SetSpriteToPart(MaskPart part, Sprite sprite)
         {
             var pair = partSpritePair.Find(pair => pair.One.Equals(part));
             if (pair != null)
             {
                 pair.Two.sprite = sprite;
+            }
+        }
+
+        public Sprite GetSpriteFromPart(MaskPart part)
+        {
+            var pair = partSpritePair.Find(pair => pair.One.Equals(part));
+            return pair?.Two.sprite;
+        }
+
+        private void Update()
+        {
+            if (!interactive) return;
+            if (Keyboard.current != null && Keyboard.current[key].wasPressedThisFrame)
+            {
+                DebugUtils.DebugLogMsg($"Direct poll: {key} was pressed!", DebugUtils.DebugType.Regular);
             }
         }
     }
