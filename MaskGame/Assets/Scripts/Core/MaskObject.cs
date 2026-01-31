@@ -11,12 +11,18 @@ namespace Core
     {
         [SerializeField] private List<MaskPartSpritePair> partSpritePair;
         [SerializeField] private bool interactive;
-        [ShowIf("interactive")]
-        [SerializeField] private Key key;
-        [ShowIf("interactive")]
-        [SerializeField] private TextMeshProUGUI keyText;
-        [ShowIf("interactive")]
-        [SerializeField] private MaskObject objectToSendInfo;
+
+        [ShowIf("interactive")] [SerializeField]
+        private Key key;
+
+        [ShowIf("interactive")] [SerializeField]
+        private TextMeshProUGUI keyText;
+
+        [ShowIf("interactive")] [SerializeField]
+        private MaskObject objectToSendInfo;
+
+        [ShowIf("interactive")] [SerializeField]
+        private int difficultyLevel;
 
         private void Awake()
         {
@@ -59,13 +65,22 @@ namespace Core
         private void Update()
         {
             if (!interactive) return;
+            if (!LevelManager.GetSingleton().AllowInteraction()) return;
             if (Keyboard.current == null || !Keyboard.current[key].wasPressedThisFrame) return;
             // DebugUtils.DebugLogMsg($"Direct poll: {key} was pressed!", DebugUtils.DebugType.Regular);
             var pair = partSpritePair.Find(pair => pair.One.Equals(MaskPart.Eye));
             if (pair != null)
             {
-                objectToSendInfo.SetSpriteToPart(MaskPart.Eye, pair.Two.sprite);    
+                objectToSendInfo.SetSpriteToPart(MaskPart.Eye, pair.Two.sprite);
             }
         }
+
+        [Button("Reset Mask")]
+        public void ResetMask()
+        {
+            partSpritePair.ForEach(part => part.Two.sprite = null);
+        }
+
+        public int DifficultyLevel() => difficultyLevel;
     }
 }
