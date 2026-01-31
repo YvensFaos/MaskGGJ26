@@ -68,6 +68,7 @@ namespace Core
         {
             if (!interactive) return;
             if (!LevelManager.GetSingleton().AllowInteraction()) return;
+            if (blockedSprite.enabled) return;
             if (Keyboard.current == null || !Keyboard.current[key].wasPressedThisFrame) return;
             // DebugUtils.DebugLogMsg($"Direct poll: {key} was pressed!", DebugUtils.DebugType.Regular);
             LevelManager.GetSingleton().ReceiveInteraction(this);

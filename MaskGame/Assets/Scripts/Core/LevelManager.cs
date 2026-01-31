@@ -11,6 +11,8 @@ namespace Core
 {
     public class LevelManager : WeakSingleton<LevelManager>
     {
+        private static readonly int Stand = Animator.StringToHash("Stand");
+
         [SerializeField]
         private List<MaskObject> maskObjects;
         [SerializeField]
@@ -22,6 +24,11 @@ namespace Core
         [SerializeField] private SpriteRenderer timerSprite;
         [SerializeField] private TextMeshProUGUI currentPartText;
         [SerializeField] private TextMeshProUGUI scoreText;
+        [SerializeField] private SpriteRenderer symbolSpriteRenderer;
+        [SerializeField] private Sprite eyesSymbol;
+        [SerializeField] private Sprite noseSymbol;
+        [SerializeField] private Sprite acceSymbol;
+        [SerializeField] private Animator plaqueAnimator;
 
         [Header("Level Settings")]
         [SerializeField]
@@ -151,6 +158,23 @@ namespace Core
         {
             _orderIndex = ++_orderIndex % _levelOrder.Length;
             currentPartText.text = _levelOrder[_orderIndex].ToString();
+            plaqueAnimator.SetTrigger(Stand);
+            switch (_levelOrder[_orderIndex])
+            {
+                case MaskPart.Eye:
+                    symbolSpriteRenderer.sprite = eyesSymbol;
+                    break;
+                case MaskPart.Nose:
+                    symbolSpriteRenderer.sprite = noseSymbol;
+                    break;
+                case MaskPart.Access:
+                    symbolSpriteRenderer.sprite = acceSymbol;
+                    break;
+                case MaskPart.Base:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
 
         [Button("Generate Random Mask")]
