@@ -47,19 +47,20 @@ namespace Core
             }
         }
 
-        public void SetSpriteToPart(MaskPart part, Sprite sprite)
+        public void SetSpriteToPart(MaskPart part, SpriteRenderer spriteRenderer)
         {
             var pair = partSpritePair.Find(pair => pair.One.Equals(part));
             if (pair != null)
             {
-                pair.Two.sprite = sprite;
+                pair.Two.transform.localPosition = spriteRenderer.gameObject.transform.localPosition;
+                pair.Two.sprite = spriteRenderer.sprite;
             }
         }
 
-        public Sprite GetSpriteFromPart(MaskPart part)
+        public SpriteRenderer GetSpriteFromPart(MaskPart part)
         {
             var pair = partSpritePair.Find(pair => pair.One.Equals(part));
-            return pair?.Two.sprite;
+            return pair?.Two;
         }
 
         private void Update()
@@ -71,7 +72,7 @@ namespace Core
             var pair = partSpritePair.Find(pair => pair.One.Equals(MaskPart.Eye));
             if (pair != null)
             {
-                objectToSendInfo.SetSpriteToPart(MaskPart.Eye, pair.Two.sprite);
+                objectToSendInfo.SetSpriteToPart(MaskPart.Eye, pair.Two);
             }
         }
 

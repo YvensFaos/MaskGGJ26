@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
-using UnityEngine.UI;
 using UUtils;
 
 namespace Core
@@ -58,6 +58,7 @@ namespace Core
             
         }
 
+        [Button("Generate Random Mask")]
         private void GenerateRandomMask()
         {
             var difficultyList = maskObjects.FindAll(maskObject => maskObject.DifficultyLevel() <= _currentDifficultyLevel);
@@ -70,7 +71,8 @@ namespace Core
             void SetRandomPart(List<MaskObject> randomList, MaskPart part)
             {
                 var random = RandomHelper<MaskObject>.GetRandomFromList(randomList);
-                random.SetSpriteToPart(part, random.GetSpriteFromPart(part));
+                var spriteRenderer = random.GetSpriteFromPart(part);
+                exampleObject.SetSpriteToPart(part, spriteRenderer);
             }
         }
 
