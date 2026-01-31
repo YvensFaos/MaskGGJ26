@@ -31,6 +31,7 @@ namespace Core
         [SerializeField] private Sprite acceSymbol;
         [SerializeField] private Animator plaqueAnimator;
         [SerializeField] private PlayableDirector correctDirector;
+        [SerializeField] private ParticleSystem smokeParticles;
 
         [Header("Level Settings")]
         [SerializeField]
@@ -114,6 +115,7 @@ namespace Core
                 {
                     _score++;
                     UpdateScoreText();
+                    smokeParticles.Play();
                     correctDirector.Play();
                     //Give it one frame for the director
                     yield return null;
