@@ -136,24 +136,22 @@ namespace Core
             var currentPart = _levelOrder[_orderIndex];
             var spriteRenderer = interactObject.GetSpriteFromPart(currentPart);
             makingObject.SetSpriteToPart(currentPart, spriteRenderer);
-            if (CheckMatchingPart(currentPart, spriteRenderer))
+            var check = CheckMatchingPart(currentPart, spriteRenderer);
+            switch (currentPart)
             {
-                switch (currentPart)
-                {
-                    case MaskPart.Eye:
-                        _correctEye = true;
-                        break;
-                    case MaskPart.Nose:
-                        _correctNose = true;
-                        break;
-                    case MaskPart.Access:
-                        _correctAccess = true;
-                        break;
-                    case MaskPart.Base:
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
+                case MaskPart.Eye:
+                    _correctEye = check;
+                    break;
+                case MaskPart.Nose:
+                    _correctNose = check;
+                    break;
+                case MaskPart.Access:
+                    _correctAccess = check;
+                    break;
+                case MaskPart.Base:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
             UpdateOrderText();
         }
