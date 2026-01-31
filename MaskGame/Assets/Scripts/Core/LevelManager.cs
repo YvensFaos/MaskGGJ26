@@ -5,6 +5,7 @@ using DG.Tweening;
 using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
 using UUtils;
 
 namespace Core
@@ -29,6 +30,7 @@ namespace Core
         [SerializeField] private Sprite noseSymbol;
         [SerializeField] private Sprite acceSymbol;
         [SerializeField] private Animator plaqueAnimator;
+        [SerializeField] private PlayableDirector correctDirector;
 
         [Header("Level Settings")]
         [SerializeField]
@@ -112,6 +114,12 @@ namespace Core
                 {
                     _score++;
                     UpdateScoreText();
+                    correctDirector.Play();
+                    //Give it one frame for the director
+                    yield return null;
+                    //Wait until the director is done
+                    yield return new WaitUntil(() => correctDirector.state != PlayState.Playing);
+                    
                     UpdateCurrentDifficultyLevel();
                     _currentTime *= timerReducer;
                     //Minimal time is 4 seconds, for now. Hardcoded!
