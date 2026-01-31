@@ -32,6 +32,7 @@ namespace Core
         [SerializeField] private Animator plaqueAnimator;
         [SerializeField] private PlayableDirector correctDirector;
         [SerializeField] private ParticleSystem smokeParticles;
+        [SerializeField] private PlayableDirector gameOverDirector;
 
         [Header("Level Settings")]
         [SerializeField]
@@ -107,12 +108,14 @@ namespace Core
 
                 if (timesUp)
                 {
-                    //TODO Game Over!
                     currentPartText.text = "Game Over!";
                     gameIsOn = false;
+                    _allowInteraction = false;
+                    gameOverDirector.Play();
                 }
                 else
                 {
+                    _allowInteraction = false;
                     _score++;
                     UpdateScoreText();
                     smokeParticles.Play();
