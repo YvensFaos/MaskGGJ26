@@ -13,7 +13,10 @@ namespace Core
         [SerializeField] private bool interactive;
         [ShowIf("interactive")]
         [SerializeField] private Key key;
+        [ShowIf("interactive")]
         [SerializeField] private TextMeshProUGUI keyText;
+        [ShowIf("interactive")]
+        [SerializeField] private MaskObject objectToSendInfo;
 
         private void Awake()
         {
@@ -56,9 +59,12 @@ namespace Core
         private void Update()
         {
             if (!interactive) return;
-            if (Keyboard.current != null && Keyboard.current[key].wasPressedThisFrame)
+            if (Keyboard.current == null || !Keyboard.current[key].wasPressedThisFrame) return;
+            // DebugUtils.DebugLogMsg($"Direct poll: {key} was pressed!", DebugUtils.DebugType.Regular);
+            var pair = partSpritePair.Find(pair => pair.One.Equals(MaskPart.Eye));
+            if (pair != null)
             {
-                DebugUtils.DebugLogMsg($"Direct poll: {key} was pressed!", DebugUtils.DebugType.Regular);
+                objectToSendInfo.SetSpriteToPart(MaskPart.Eye, pair.Two.sprite);    
             }
         }
     }
