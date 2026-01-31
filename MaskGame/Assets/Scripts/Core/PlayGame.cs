@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
 
@@ -11,6 +12,7 @@ namespace Core
         [SerializeField] private PlayableDirector startGameDirector;
         [SerializeField] private Key playKey;
         [SerializeField] private TextMeshProUGUI playKeyText;
+        [SerializeField] private UnityEvent onPlay;
         private bool _play;
 
         private void Start()
@@ -23,6 +25,7 @@ namespace Core
             if (_play) return;
             if (Keyboard.current == null || !Keyboard.current[playKey].wasPressedThisFrame) return;
             startGameDirector.Play();
+            onPlay.Invoke();
             _play = true;
         }
     }
