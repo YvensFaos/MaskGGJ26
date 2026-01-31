@@ -69,11 +69,7 @@ namespace Core
             if (!LevelManager.GetSingleton().AllowInteraction()) return;
             if (Keyboard.current == null || !Keyboard.current[key].wasPressedThisFrame) return;
             // DebugUtils.DebugLogMsg($"Direct poll: {key} was pressed!", DebugUtils.DebugType.Regular);
-            var pair = partSpritePair.Find(pair => pair.One.Equals(MaskPart.Eye));
-            if (pair != null)
-            {
-                objectToSendInfo.SetSpriteToPart(MaskPart.Eye, pair.Two);
-            }
+            LevelManager.GetSingleton().ReceiveInteraction(this);
         }
 
         [Button("Reset Mask")]
