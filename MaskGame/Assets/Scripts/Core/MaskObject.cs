@@ -40,7 +40,7 @@ namespace Core
         {
             if (interactive)
             {
-                keyText.text = key.ToString().ToLower();
+                keyText.text = key.ToString().ToUpper();
             }
             else
             {
