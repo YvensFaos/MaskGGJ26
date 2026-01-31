@@ -11,6 +11,7 @@ namespace Core
     {
         [SerializeField] private List<MaskPartSpritePair> partSpritePair;
         [SerializeField] private bool interactive;
+        [SerializeField] private SpriteRenderer blockedSprite;
 
         [ShowIf("interactive")] [SerializeField]
         private Key key;
@@ -76,6 +77,11 @@ namespace Core
         public void ResetMask()
         {
             partSpritePair.ForEach(part => part.Two.sprite = null);
+        }
+
+        public void UpdateBlockedStatus(int currentDifficultyLevel)
+        {
+            blockedSprite.enabled = currentDifficultyLevel < difficultyLevel;
         }
 
         public int DifficultyLevel() => difficultyLevel;

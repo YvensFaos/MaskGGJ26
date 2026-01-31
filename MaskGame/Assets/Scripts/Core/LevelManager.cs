@@ -30,6 +30,8 @@ namespace Core
         private float startTimer;
         [SerializeField]
         private float timerReducer;
+        [SerializeField] 
+        private AnimationCurve difficultyCurve;
 
         private int _currentDifficultyLevel;
         private bool _allowInteraction;
@@ -60,6 +62,8 @@ namespace Core
             _allowInteraction = false;
             _currentDifficultyLevel = startDifficulty;
             _currentTime = startTimer;
+            _score = 0;
+            UpdateCurrentDifficultyLevel();
             UpdateScoreText();
             yield return null;
 
@@ -101,6 +105,7 @@ namespace Core
                 {
                     _score++;
                     UpdateScoreText();
+                    UpdateCurrentDifficultyLevel();
                     _currentTime *= timerReducer;
                     //Minimal time is 4 seconds, for now. Hardcoded!
                     _currentTime = Mathf.Max(4, _currentTime);
@@ -171,6 +176,12 @@ namespace Core
             scoreText.text = _score.ToString();
         }
 
+        private void UpdateCurrentDifficultyLevel()
+        {
+            _currentDifficultyLevel = (int) difficultyCurve.Evaluate(_score);
+            maskObjects.ForEach(maskObject => maskObject.UpdateBlockedStatus(_currentDifficultyLevel));
+        }
+        
         public bool AllowInteraction() => _allowInteraction;
     }
 }
