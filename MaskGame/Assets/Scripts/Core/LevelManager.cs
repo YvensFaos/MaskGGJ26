@@ -34,6 +34,9 @@ namespace Core
         [SerializeField] private ParticleSystem smokeParticles;
         [SerializeField] private PlayableDirector gameOverDirector;
         [SerializeField] private CrescendoManager crescendoManager;
+        [SerializeField] private AudioSource sfxInteractSource;
+        [SerializeField] private List<AudioClip> interactClips;
+        [SerializeField] private AudioClip incorrectClip;
 
         [Header("Level Settings")]
         [SerializeField]
@@ -149,6 +152,10 @@ namespace Core
             var spriteRenderer = interactObject.GetSpriteFromPart(currentPart);
             makingObject.SetSpriteToPart(currentPart, spriteRenderer);
             var check = CheckMatchingPart(currentPart, spriteRenderer);
+            sfxInteractSource.Stop();
+            sfxInteractSource.PlayOneShot(check
+                ? RandomHelper<AudioClip>.GetRandomFromList(interactClips)
+                : incorrectClip);
             switch (currentPart)
             {
                 case MaskPart.Eye:
