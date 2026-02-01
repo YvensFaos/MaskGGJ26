@@ -100,7 +100,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: Play
+  - name: Replay
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -109,7 +109,29 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1925
-      y: 1594
+      y: 1457
+      width: 102
+      height: 84
+    spriteID: cde7a65122f8a4275a5eb79d5e1acfe7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1925, y: 1457}
+    spritePosition: {x: 821, y: 166}
+  - name: Play
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 2714
       width: 70
       height: 79
     spriteID: 4d4d5263b48684c778e4905458ffba07
@@ -120,7 +142,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1925, y: 1594}
+    uvTransform: {x: 183, y: 2714}
     spritePosition: {x: 633, y: 169}
   - name: Logo
     originalName: 
@@ -196,8 +218,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 251
-      y: 3153
+      x: 1983
+      y: 824
       width: 29
       height: 32
     spriteID: 01632dfcfeb9b4374a46ba84ef60dcea
@@ -208,7 +230,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 251, y: 3153}
+    uvTransform: {x: 1983, y: 824}
     spritePosition: {x: 1221, y: 593}
   - name: Puff 01
     originalName: 
@@ -373,7 +395,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 191
-      y: 2511
+      y: 2548
       width: 45
       height: 51
     spriteID: fb0c5205c7fa24618b0fbb10f47cbf46
@@ -384,7 +406,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 191, y: 2511}
+    uvTransform: {x: 191, y: 2548}
     spritePosition: {x: 597, y: 504}
   - name: Eyes 01
     originalName: 
@@ -394,8 +416,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1925
-      y: 1457
+      x: 1728
+      y: 650
       width: 102
       height: 69
     spriteID: 28680a9595a4146cea1e42d65ff3e97b
@@ -406,7 +428,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1925, y: 1457}
+    uvTransform: {x: 1728, y: 650}
     spritePosition: {x: 564, y: 537}
   - name: Access 01
     originalName: 
@@ -504,8 +526,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1926
-      y: 650
+      x: 163
+      y: 3153
       width: 108
       height: 26
     spriteID: f784a966620ca4829a5d98fdc0d46670
@@ -516,7 +538,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1926, y: 650}
+    uvTransform: {x: 163, y: 3153}
     spritePosition: {x: 764, y: 551}
   - name: Block
     originalName: 
@@ -681,7 +703,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 244
-      y: 2511
+      y: 2548
       width: 38
       height: 47
     spriteID: e93bc585f25ec47089f72d718314e1f0
@@ -692,7 +714,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 244, y: 2511}
+    uvTransform: {x: 244, y: 2548}
     spritePosition: {x: 629, y: 288}
   - name: Block
     originalName: 
@@ -724,8 +746,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 257
-      y: 2457
+      x: 244
+      y: 2603
       width: 21
       height: 19
     spriteID: bbf556cfc24a74b3baab1d200ba497fc
@@ -736,7 +758,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 257, y: 2457}
+    uvTransform: {x: 244, y: 2603}
     spritePosition: {x: 808, y: 339}
   - name: Eyes 05
     originalName: 
@@ -746,8 +768,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1925
-      y: 1534
+      x: 581
+      y: 1691
       width: 108
       height: 52
     spriteID: d4ea1f7cfb6654722975ce8326d06c9b
@@ -758,7 +780,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1925, y: 1534}
+    uvTransform: {x: 581, y: 1691}
     spritePosition: {x: 752, y: 338}
   - name: Access 05
     originalName: 
@@ -900,8 +922,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 2019
-      y: 689
+      x: 261
+      y: 2769
       width: 20
       height: 21
     spriteID: d2a5f0abf26d144f9a02827dec5b9254
@@ -912,7 +934,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2019, y: 689}
+    uvTransform: {x: 261, y: 2769}
     spritePosition: {x: 612, y: 161}
   - name: Eyes 07
     originalName: 
@@ -922,8 +944,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 163
-      y: 3153
+      x: 154
+      y: 3335
       width: 80
       height: 12
     spriteID: 662549d38967945239338ee0d86659e0
@@ -934,7 +956,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 163, y: 3153}
+    uvTransform: {x: 154, y: 3335}
     spritePosition: {x: 580, y: 173}
   - name: Access 07
     originalName: 
@@ -988,8 +1010,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1926
-      y: 689
+      x: 191
+      y: 2511
       width: 85
       height: 29
     spriteID: 916defd39b6bc41479573091cd9b7f12
@@ -1000,7 +1022,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1926, y: 689}
+    uvTransform: {x: 191, y: 2511}
     spritePosition: {x: 765, y: 164}
   - name: Nose 08
     originalName: 
@@ -1010,8 +1032,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 191
-      y: 2570
+      x: 1983
+      y: 732
       width: 53
       height: 38
     spriteID: 14f30e2ae2a074d0e9e7eb27c3553163
@@ -1022,7 +1044,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 191, y: 2570}
+    uvTransform: {x: 1983, y: 732}
     spritePosition: {x: 779, y: 143}
   - name: Access 08
     originalName: 
@@ -1076,8 +1098,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 252
-      y: 2570
+      x: 261
+      y: 2714
       width: 23
       height: 47
     spriteID: 9bd48707b177345e38cc4493b5fce298
@@ -1088,7 +1110,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 252, y: 2570}
+    uvTransform: {x: 261, y: 2714}
     spritePosition: {x: 1015, y: 121}
   - name: Eyes 09
     originalName: 
@@ -1252,8 +1274,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 2003
-      y: 1594
+      x: 1983
+      y: 778
       width: 37
       height: 38
     spriteID: b5d1da05b84a643febc513c92d69ccc2
@@ -1264,7 +1286,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2003, y: 1594}
+    uvTransform: {x: 1983, y: 778}
     spritePosition: {x: 126, y: 347}
   - name: TimerOverBar
     originalName: 
@@ -1296,7 +1318,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1728
+      x: 1838
       y: 650
       width: 190
       height: 31
@@ -1308,7 +1330,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1728, y: 650}
+    uvTransform: {x: 1838, y: 650}
     spritePosition: {x: 155, y: 350}
   - name: TimerBar
     originalName: 
@@ -1318,7 +1340,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 1728
+      x: 1838
       y: 689
       width: 190
       height: 31
@@ -1330,7 +1352,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1728, y: 689}
+    uvTransform: {x: 1838, y: 689}
     spritePosition: {x: 155, y: 350}
   - name: TimeBarBase
     originalName: 
@@ -1428,8 +1450,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 183
-      y: 2633
+      x: 1925
+      y: 1549
       width: 90
       height: 79
     spriteID: 129098a52b78743b19183b71ffc3cf21
@@ -1440,7 +1462,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 183, y: 2633}
+    uvTransform: {x: 1925, y: 1549}
     spritePosition: {x: 50, y: 187}
   - name: Access
     originalName: 
@@ -1451,7 +1473,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 183
-      y: 2720
+      y: 2633
       width: 88
       height: 73
     spriteID: e06a31dc8c4c14c94acfc2e1d9154880
@@ -1462,7 +1484,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 183, y: 2720}
+    uvTransform: {x: 183, y: 2633}
     spritePosition: {x: 51, y: 199}
   - name: Eye
     originalName: 
@@ -1472,8 +1494,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 581
-      y: 1691
+      x: 1925
+      y: 1636
       width: 116
       height: 46
     spriteID: 6259b274cd38244989cfebf28c8e9456
@@ -1484,7 +1506,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 581, y: 1691}
+    uvTransform: {x: 1925, y: 1636}
     spritePosition: {x: 37, y: 204}
   - name: Plaque
     originalName: 
@@ -1767,13 +1789,33 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
+  - name: Layer 24
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e537320f851964b878fa9c185a10bf04
+    layerID: 237
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Replay
+    spriteName: Replay
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cde7a65122f8a4275a5eb79d5e1acfe7
+    layerID: 239
+    mosaicPosition: {x: 1925, y: 1457}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Play
     spriteName: Play
     isGroup: 0
     parentIndex: -1
     spriteID: 4d4d5263b48684c778e4905458ffba07
     layerID: 236
-    mosaicPosition: {x: 1925, y: 1594}
+    mosaicPosition: {x: 183, y: 2714}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -1823,7 +1865,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 01632dfcfeb9b4374a46ba84ef60dcea
     layerID: 206
-    mosaicPosition: {x: 251, y: 3153}
+    mosaicPosition: {x: 1983, y: 824}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -1870,7 +1912,7 @@ ScriptedImporter:
   - name: Layer 7
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: 34abadb13bbfb475fb049acc4d5e38ef
     layerID: 54
     mosaicPosition: {x: 0, y: 0}
@@ -1880,7 +1922,7 @@ ScriptedImporter:
   - name: Layer 10
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: 0596a58f0ff2a43409856648cb9a4a76
     layerID: 57
     mosaicPosition: {x: 0, y: 0}
@@ -1890,7 +1932,7 @@ ScriptedImporter:
   - name: Layer 11
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: fef520214aee74f0493ba7de9034dd77
     layerID: 58
     mosaicPosition: {x: 0, y: 0}
@@ -1900,7 +1942,7 @@ ScriptedImporter:
   - name: Layer 12
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: a654ff949063a43048aed17231284938
     layerID: 59
     mosaicPosition: {x: 0, y: 0}
@@ -1910,7 +1952,7 @@ ScriptedImporter:
   - name: Layer 13
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: fac895333052044e2b423328071c0e72
     layerID: 60
     mosaicPosition: {x: 0, y: 0}
@@ -1920,7 +1962,7 @@ ScriptedImporter:
   - name: Layer 18
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: c38503d9274444907825d8bd5e838c61
     layerID: 65
     mosaicPosition: {x: 0, y: 0}
@@ -1930,7 +1972,7 @@ ScriptedImporter:
   - name: Layer 19
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: 56febc21eb0e043ec90b63c558f9b5b5
     layerID: 66
     mosaicPosition: {x: 0, y: 0}
@@ -1940,7 +1982,7 @@ ScriptedImporter:
   - name: Layer 20
     spriteName: 
     isGroup: 0
-    parentIndex: 9
+    parentIndex: 11
     spriteID: 1ab2c0e6b21a24982bddaa03fe0b609a
     layerID: 67
     mosaicPosition: {x: 0, y: 0}
@@ -2040,7 +2082,7 @@ ScriptedImporter:
   - name: Blocked
     spriteName: Blocked
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: dc241504487bc4bcfa64f7e6cdcbb9bf
     layerID: 160
     mosaicPosition: {x: 4, y: 2830}
@@ -2050,7 +2092,7 @@ ScriptedImporter:
   - name: Mask 1
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: c93f2a366e1dc4db1aae82f3c3cafad0
     layerID: 76
     mosaicPosition: {x: 0, y: 0}
@@ -2060,7 +2102,7 @@ ScriptedImporter:
   - name: Layer 5
     spriteName: 
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 30
     spriteID: 6b3aed5f6196546469d2b84ab4554d69
     layerID: 52
     mosaicPosition: {x: 0, y: 0}
@@ -2070,27 +2112,27 @@ ScriptedImporter:
   - name: Nose 01
     spriteName: Nose 01
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 30
     spriteID: fb0c5205c7fa24618b0fbb10f47cbf46
     layerID: 72
-    mosaicPosition: {x: 191, y: 2511}
+    mosaicPosition: {x: 191, y: 2548}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Eyes 01
     spriteName: Eyes 01
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 30
     spriteID: 28680a9595a4146cea1e42d65ff3e97b
     layerID: 68
-    mosaicPosition: {x: 1925, y: 1457}
+    mosaicPosition: {x: 1728, y: 650}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Access 01
     spriteName: Access 01
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 30
     spriteID: 9c089454aba01476e98a1851e45e6dc7
     layerID: 74
     mosaicPosition: {x: 1539, y: 1328}
@@ -2100,7 +2142,7 @@ ScriptedImporter:
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 30
     spriteID: ec725b70aa1ce4393bb017f6b6badd09
     layerID: 3
     mosaicPosition: {x: 163, y: 3511}
@@ -2110,7 +2152,7 @@ ScriptedImporter:
   - name: Mask 2
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 5b3fc40d5d2e34e34b74f994d1ffcba1
     layerID: 84
     mosaicPosition: {x: 0, y: 0}
@@ -2120,7 +2162,7 @@ ScriptedImporter:
   - name: Layer 6
     spriteName: Layer 6
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 36
     spriteID: 13ccee9a5e8794041968000f978a0267
     layerID: 53
     mosaicPosition: {x: 1292, y: 441}
@@ -2130,7 +2172,7 @@ ScriptedImporter:
   - name: Access 02
     spriteName: Access 02
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 36
     spriteID: 46e088c30b92d4c0fbfc3c0fb0b4578b
     layerID: 82
     mosaicPosition: {x: 1828, y: 1351}
@@ -2140,7 +2182,7 @@ ScriptedImporter:
   - name: Nose 02
     spriteName: Nose 02
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 36
     spriteID: add0780a24c044240b103d195a79edec
     layerID: 80
     mosaicPosition: {x: 191, y: 2457}
@@ -2150,17 +2192,17 @@ ScriptedImporter:
   - name: Eyes 02
     spriteName: Eyes 02
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 36
     spriteID: f784a966620ca4829a5d98fdc0d46670
     layerID: 78
-    mosaicPosition: {x: 1926, y: 650}
+    mosaicPosition: {x: 163, y: 3153}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 36
     spriteID: 93570a429dd2d4a63b9b53d4ed20025e
     layerID: 4
     mosaicPosition: {x: 4, y: 3955}
@@ -2170,7 +2212,7 @@ ScriptedImporter:
   - name: Mask 3
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 407d9f62cb2684ece990fc8c36a4ad5b
     layerID: 93
     mosaicPosition: {x: 0, y: 0}
@@ -2180,7 +2222,7 @@ ScriptedImporter:
   - name: Access 03
     spriteName: Access 03
     isGroup: 0
-    parentIndex: 40
+    parentIndex: 42
     spriteID: 136d48be08fa64097a10254fb5c141bc
     layerID: 91
     mosaicPosition: {x: 4, y: 3017}
@@ -2190,7 +2232,7 @@ ScriptedImporter:
   - name: Nose 03
     spriteName: Nose 03
     isGroup: 0
-    parentIndex: 40
+    parentIndex: 42
     spriteID: 71589c390c69a4a5aace7aa267084678
     layerID: 90
     mosaicPosition: {x: 208, y: 2188}
@@ -2200,7 +2242,7 @@ ScriptedImporter:
   - name: Eyes 03
     spriteName: Eyes 03
     isGroup: 0
-    parentIndex: 40
+    parentIndex: 42
     spriteID: 213d161eec38f46eca2eb61c41d6d14b
     layerID: 87
     mosaicPosition: {x: 208, y: 2374}
@@ -2210,7 +2252,7 @@ ScriptedImporter:
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 40
+    parentIndex: 42
     spriteID: ab2ea8d0e9f6f46e9a3c2250bcfff68b
     layerID: 6
     mosaicPosition: {x: 154, y: 3199}
@@ -2220,7 +2262,7 @@ ScriptedImporter:
   - name: Layer 8
     spriteName: 
     isGroup: 0
-    parentIndex: 40
+    parentIndex: 42
     spriteID: 9747da3d14a124144a0ec6a995252d11
     layerID: 55
     mosaicPosition: {x: 0, y: 0}
@@ -2230,7 +2272,7 @@ ScriptedImporter:
   - name: Mask 4
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: c0444ef2613024e199af43df687658a5
     layerID: 49
     mosaicPosition: {x: 0, y: 0}
@@ -2240,7 +2282,7 @@ ScriptedImporter:
   - name: Nose 04
     spriteName: Nose 04
     isGroup: 0
-    parentIndex: 46
+    parentIndex: 48
     spriteID: cdbdd1a5796b24a21839b99dca216559
     layerID: 44
     mosaicPosition: {x: 208, y: 2143}
@@ -2250,7 +2292,7 @@ ScriptedImporter:
   - name: Eyes 04
     spriteName: Eyes 04
     isGroup: 0
-    parentIndex: 46
+    parentIndex: 48
     spriteID: b1137c70da862452b8db13df19b57142
     layerID: 43
     mosaicPosition: {x: 170, y: 3465}
@@ -2260,17 +2302,17 @@ ScriptedImporter:
   - name: Access 04
     spriteName: Access 04
     isGroup: 0
-    parentIndex: 46
+    parentIndex: 48
     spriteID: e93bc585f25ec47089f72d718314e1f0
     layerID: 48
-    mosaicPosition: {x: 244, y: 2511}
+    mosaicPosition: {x: 244, y: 2548}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 46
+    parentIndex: 48
     spriteID: 051616297adce4d0bb443ff15614018f
     layerID: 7
     mosaicPosition: {x: 163, y: 3017}
@@ -2280,7 +2322,7 @@ ScriptedImporter:
   - name: Mask 5
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: a85b2fd4778c44911a9af20e30084661
     layerID: 100
     mosaicPosition: {x: 0, y: 0}
@@ -2290,27 +2332,27 @@ ScriptedImporter:
   - name: Nose 05
     spriteName: Nose 05
     isGroup: 0
-    parentIndex: 51
+    parentIndex: 53
     spriteID: bbf556cfc24a74b3baab1d200ba497fc
     layerID: 127
-    mosaicPosition: {x: 257, y: 2457}
+    mosaicPosition: {x: 244, y: 2603}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Eyes 05
     spriteName: Eyes 05
     isGroup: 0
-    parentIndex: 51
+    parentIndex: 53
     spriteID: d4ea1f7cfb6654722975ce8326d06c9b
     layerID: 126
-    mosaicPosition: {x: 1925, y: 1534}
+    mosaicPosition: {x: 581, y: 1691}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Access 05
     spriteName: Access 05
     isGroup: 0
-    parentIndex: 51
+    parentIndex: 53
     spriteID: 0e246963712a14aef848bc85dc36ce40
     layerID: 128
     mosaicPosition: {x: 4, y: 3199}
@@ -2320,7 +2362,7 @@ ScriptedImporter:
   - name: Layer 14
     spriteName: 
     isGroup: 0
-    parentIndex: 51
+    parentIndex: 53
     spriteID: 127def24a2f9243efb71e40dcbb2829b
     layerID: 61
     mosaicPosition: {x: 0, y: 0}
@@ -2330,7 +2372,7 @@ ScriptedImporter:
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 51
+    parentIndex: 53
     spriteID: 96f07c6998c78433183fb27a5d098c52
     layerID: 96
     mosaicPosition: {x: 146, y: 3803}
@@ -2340,7 +2382,7 @@ ScriptedImporter:
   - name: Mask 6
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: ee7267c0f4ac2414980bb0fd73eccd97
     layerID: 106
     mosaicPosition: {x: 0, y: 0}
@@ -2350,7 +2392,7 @@ ScriptedImporter:
   - name: Nose 06
     spriteName: Nose 06
     isGroup: 0
-    parentIndex: 57
+    parentIndex: 59
     spriteID: 3af2e497ec667421a87688265877a6e1
     layerID: 132
     mosaicPosition: {x: 191, y: 2405}
@@ -2360,7 +2402,7 @@ ScriptedImporter:
   - name: Eyes 06
     spriteName: Eyes 06
     isGroup: 0
-    parentIndex: 57
+    parentIndex: 59
     spriteID: fe11f0b44833d4dbe9411b16f3c79be0
     layerID: 130
     mosaicPosition: {x: 170, y: 3369}
@@ -2370,7 +2412,7 @@ ScriptedImporter:
   - name: Access 06
     spriteName: Access 06
     isGroup: 0
-    parentIndex: 57
+    parentIndex: 59
     spriteID: f4c38d43f798c436a8ac0cbf15a19427
     layerID: 134
     mosaicPosition: {x: 208, y: 2052}
@@ -2380,7 +2422,7 @@ ScriptedImporter:
   - name: Layer 15
     spriteName: 
     isGroup: 0
-    parentIndex: 57
+    parentIndex: 59
     spriteID: 5c1a95f0d25c5486c96011a5dcec2cfe
     layerID: 62
     mosaicPosition: {x: 0, y: 0}
@@ -2390,7 +2432,7 @@ ScriptedImporter:
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 57
+    parentIndex: 59
     spriteID: c2f3668632e364304a5cc56ee6cdb811
     layerID: 102
     mosaicPosition: {x: 146, y: 3939}
@@ -2400,7 +2442,7 @@ ScriptedImporter:
   - name: Mask 7
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 260af28c05535488681d2ac128b135ab
     layerID: 124
     mosaicPosition: {x: 0, y: 0}
@@ -2410,27 +2452,27 @@ ScriptedImporter:
   - name: Nose 07
     spriteName: Nose 07
     isGroup: 0
-    parentIndex: 63
+    parentIndex: 65
     spriteID: d2a5f0abf26d144f9a02827dec5b9254
     layerID: 138
-    mosaicPosition: {x: 2019, y: 689}
+    mosaicPosition: {x: 261, y: 2769}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Eyes 07
     spriteName: Eyes 07
     isGroup: 0
-    parentIndex: 63
+    parentIndex: 65
     spriteID: 662549d38967945239338ee0d86659e0
     layerID: 137
-    mosaicPosition: {x: 163, y: 3153}
+    mosaicPosition: {x: 154, y: 3335}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Access 07
     spriteName: Access 07
     isGroup: 0
-    parentIndex: 63
+    parentIndex: 65
     spriteID: 66e61c708472643a9905960b42e664ab
     layerID: 140
     mosaicPosition: {x: 420, y: 1691}
@@ -2440,7 +2482,7 @@ ScriptedImporter:
   - name: Layer 16
     spriteName: 
     isGroup: 0
-    parentIndex: 63
+    parentIndex: 65
     spriteID: a789a70069cff4bbd9952de4433f1784
     layerID: 63
     mosaicPosition: {x: 0, y: 0}
@@ -2450,7 +2492,7 @@ ScriptedImporter:
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 63
+    parentIndex: 65
     spriteID: 0b15014201c334bb0a8ab656ed767ca0
     layerID: 120
     mosaicPosition: {x: 292, y: 1691}
@@ -2460,7 +2502,7 @@ ScriptedImporter:
   - name: Mask 8
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: aed203ba2eed04364a64ae83b067fc63
     layerID: 118
     mosaicPosition: {x: 0, y: 0}
@@ -2470,27 +2512,27 @@ ScriptedImporter:
   - name: Eyes 08
     spriteName: Eyes 08
     isGroup: 0
-    parentIndex: 69
+    parentIndex: 71
     spriteID: 916defd39b6bc41479573091cd9b7f12
     layerID: 145
-    mosaicPosition: {x: 1926, y: 689}
+    mosaicPosition: {x: 191, y: 2511}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Nose 08
     spriteName: Nose 08
     isGroup: 0
-    parentIndex: 69
+    parentIndex: 71
     spriteID: 14f30e2ae2a074d0e9e7eb27c3553163
     layerID: 147
-    mosaicPosition: {x: 191, y: 2570}
+    mosaicPosition: {x: 1983, y: 732}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Access 08
     spriteName: Access 08
     isGroup: 0
-    parentIndex: 69
+    parentIndex: 71
     spriteID: 186011d5be8db4ade9eb38683790e7f4
     layerID: 149
     mosaicPosition: {x: 4, y: 2633}
@@ -2500,7 +2542,7 @@ ScriptedImporter:
   - name: Marx
     spriteName: 
     isGroup: 0
-    parentIndex: 69
+    parentIndex: 71
     spriteID: 7eef1d13f3f3f4a7eb1f841066a8aa76
     layerID: 144
     mosaicPosition: {x: 0, y: 0}
@@ -2510,7 +2552,7 @@ ScriptedImporter:
   - name: Layer 17
     spriteName: 
     isGroup: 0
-    parentIndex: 69
+    parentIndex: 71
     spriteID: 4ea9f53baa27e44f28f9205a0c07e5cb
     layerID: 64
     mosaicPosition: {x: 0, y: 0}
@@ -2520,7 +2562,7 @@ ScriptedImporter:
   - name: Layer 21
     spriteName: 
     isGroup: 0
-    parentIndex: 69
+    parentIndex: 71
     spriteID: b8e4f52ebb2f84d6eba2af3947b19757
     layerID: 143
     mosaicPosition: {x: 0, y: 0}
@@ -2530,7 +2572,7 @@ ScriptedImporter:
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 69
+    parentIndex: 71
     spriteID: 182b0970d5bbd4d2fa332905289b83da
     layerID: 114
     mosaicPosition: {x: 292, y: 1827}
@@ -2540,7 +2582,7 @@ ScriptedImporter:
   - name: Mask 9
     spriteName: 
     isGroup: 1
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 64d072897ad95486daa2ccdef471a108
     layerID: 112
     mosaicPosition: {x: 0, y: 0}
@@ -2550,17 +2592,17 @@ ScriptedImporter:
   - name: Nose 09
     spriteName: Nose 09
     isGroup: 0
-    parentIndex: 77
+    parentIndex: 79
     spriteID: 9bd48707b177345e38cc4493b5fce298
     layerID: 154
-    mosaicPosition: {x: 252, y: 2570}
+    mosaicPosition: {x: 261, y: 2714}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Eyes 09
     spriteName: Eyes 09
     isGroup: 0
-    parentIndex: 77
+    parentIndex: 79
     spriteID: a208cbbde43704eb083d1ceadfc7c649
     layerID: 152
     mosaicPosition: {x: 183, y: 2801}
@@ -2570,7 +2612,7 @@ ScriptedImporter:
   - name: Access 09
     spriteName: Access 09
     isGroup: 0
-    parentIndex: 77
+    parentIndex: 79
     spriteID: 8954a770d1ace4b35844f6e1fec396d4
     layerID: 157
     mosaicPosition: {x: 171, y: 2830}
@@ -2580,7 +2622,7 @@ ScriptedImporter:
   - name: Layer 9
     spriteName: 
     isGroup: 0
-    parentIndex: 77
+    parentIndex: 79
     spriteID: 4c4b01b5efec249fb94022987bd0319b
     layerID: 56
     mosaicPosition: {x: 0, y: 0}
@@ -2590,7 +2632,7 @@ ScriptedImporter:
   - name: Red Fill
     spriteName: Red Fill
     isGroup: 0
-    parentIndex: 77
+    parentIndex: 79
     spriteID: bd7d90252184b46f68c607de4067431b
     layerID: 45
     mosaicPosition: {x: 1420, y: 732}
@@ -2600,7 +2642,7 @@ ScriptedImporter:
   - name: Block
     spriteName: Block
     isGroup: 0
-    parentIndex: 77
+    parentIndex: 79
     spriteID: 7daba7f0ae85e42a9a58f78b2364878e
     layerID: 108
     mosaicPosition: {x: 292, y: 1963}
@@ -2610,7 +2652,7 @@ ScriptedImporter:
   - name: BlackBox copy 2
     spriteName: BlackBox copy 2
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 97621a02c8cbf4a48a3055066a36a4d9
     layerID: 195
     mosaicPosition: {x: 4, y: 3651}
@@ -2620,7 +2662,7 @@ ScriptedImporter:
   - name: BlackBox copy
     spriteName: BlackBox copy
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 64f59cd2ae3794944995a3776e592a56
     layerID: 194
     mosaicPosition: {x: 4, y: 3803}
@@ -2630,7 +2672,7 @@ ScriptedImporter:
   - name: BlackBox
     spriteName: BlackBox
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 6b2b6d096a09d4baaa473023c0d45a5f
     layerID: 191
     mosaicPosition: {x: 146, y: 3651}
@@ -2640,7 +2682,7 @@ ScriptedImporter:
   - name: Helper
     spriteName: 
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 6fc8ede4e3cd54234a9e9d5cc9880a5d
     layerID: 86
     mosaicPosition: {x: 0, y: 0}
@@ -2650,7 +2692,7 @@ ScriptedImporter:
   - name: NewBlock
     spriteName: Layer 2 copy 15
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 28
     spriteID: 629ac9bcde00e4c7f86cb7e114f23b2d
     layerID: 18
     mosaicPosition: {x: 1923, y: 4}
@@ -2670,7 +2712,7 @@ ScriptedImporter:
   - name: Clock Handlers
     spriteName: Clock Handlers
     isGroup: 0
-    parentIndex: 89
+    parentIndex: 91
     spriteID: f9436a5a13ab74f8a93b72c13c7a51ab
     layerID: 40
     mosaicPosition: {x: 268, y: 2143}
@@ -2680,17 +2722,17 @@ ScriptedImporter:
   - name: Clock
     spriteName: Clock
     isGroup: 0
-    parentIndex: 89
+    parentIndex: 91
     spriteID: b5d1da05b84a643febc513c92d69ccc2
     layerID: 30
-    mosaicPosition: {x: 2003, y: 1594}
+    mosaicPosition: {x: 1983, y: 778}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: TimerOverBar
     spriteName: TimerOverBar
     isGroup: 0
-    parentIndex: 89
+    parentIndex: 91
     spriteID: 1eff980f5fc78487d892e5d804f69027
     layerID: 39
     mosaicPosition: {x: 1520, y: 650}
@@ -2700,27 +2742,27 @@ ScriptedImporter:
   - name: TimerBar White
     spriteName: TimerBar White
     isGroup: 0
-    parentIndex: 89
+    parentIndex: 91
     spriteID: 089e898ad89df45cb9991148099efeaa
     layerID: 41
-    mosaicPosition: {x: 1728, y: 650}
+    mosaicPosition: {x: 1838, y: 650}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: TimerBar
     spriteName: TimerBar
     isGroup: 0
-    parentIndex: 89
+    parentIndex: 91
     spriteID: 0357c2f93ead849e3b6a359115c3ff04
     layerID: 28
-    mosaicPosition: {x: 1728, y: 689}
+    mosaicPosition: {x: 1838, y: 689}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: TimeBarBase
     spriteName: TimeBarBase
     isGroup: 0
-    parentIndex: 89
+    parentIndex: 91
     spriteID: f2deb30d17ac64f408f37ffe36ffae70
     layerID: 27
     mosaicPosition: {x: 1292, y: 650}
@@ -2773,7 +2815,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 129098a52b78743b19183b71ffc3cf21
     layerID: 181
-    mosaicPosition: {x: 183, y: 2633}
+    mosaicPosition: {x: 1925, y: 1549}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -2783,7 +2825,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: e06a31dc8c4c14c94acfc2e1d9154880
     layerID: 182
-    mosaicPosition: {x: 183, y: 2720}
+    mosaicPosition: {x: 183, y: 2633}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -2793,7 +2835,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 6259b274cd38244989cfebf28c8e9456
     layerID: 183
-    mosaicPosition: {x: 581, y: 1691}
+    mosaicPosition: {x: 1925, y: 1636}
     flatten: 0
     isImported: 1
     isVisible: 1
