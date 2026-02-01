@@ -33,6 +33,7 @@ namespace Core
         [SerializeField] private PlayableDirector correctDirector;
         [SerializeField] private ParticleSystem smokeParticles;
         [SerializeField] private PlayableDirector gameOverDirector;
+        [SerializeField] private CrescendoManager crescendoManager;
 
         [Header("Level Settings")]
         [SerializeField]
