@@ -218,5 +218,7 @@ namespace Core
         }
         
         public bool AllowInteraction() => _allowInteraction;
+        
+        public int GetScore() => _score;
     }
 }

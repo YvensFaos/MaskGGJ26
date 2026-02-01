@@ -9,10 +9,16 @@ namespace Core
     {
         [SerializeField] private Key replayKey;
         [SerializeField] private TextMeshProUGUI replayKeyText;
+        [SerializeField] private TextMeshProUGUI finalScoreText;
 
         private void Start()
         {
             replayKeyText.text = replayKey.ToString().ToUpper();
+        }
+
+        private void OnEnable()
+        {
+            finalScoreText.text = $"{LevelManager.GetSingleton().GetScore()}";
         }
 
         private void Update()
