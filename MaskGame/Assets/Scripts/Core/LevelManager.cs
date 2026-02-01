@@ -127,8 +127,15 @@ namespace Core
                     
                     UpdateCurrentDifficultyLevel();
                     _currentTime *= timerReducer;
-                    //Minimal time is 4 seconds, for now. Hardcoded!
-                    _currentTime = Mathf.Max(4, _currentTime);
+                    timerReducer = _score switch
+                    {
+                        10 => 0.95f,
+                        20 => 0.9f,
+                        > 30 => 0.8f,
+                        _ => timerReducer
+                    };
+                    //Minimal time is 3 seconds, for now. Hardcoded!
+                    _currentTime = Mathf.Max(3, _currentTime);
                 }
             }
             
