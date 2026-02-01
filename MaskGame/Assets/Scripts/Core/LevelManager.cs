@@ -118,6 +118,7 @@ namespace Core
                 {
                     _allowInteraction = false;
                     _score++;
+                    crescendoManager.UpdateCrescendo(_score);
                     UpdateScoreText();
                     smokeParticles.Play();
                     correctDirector.Play();
