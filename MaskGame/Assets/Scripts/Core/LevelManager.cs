@@ -1,18 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Linq;
 using DG.Tweening;
+using Mono.Collections.Generic;
 using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
 using UUtils;
+using Random = System.Random;
 
 namespace Core
 {
     public class LevelManager : WeakSingleton<LevelManager>
     {
         private static readonly int Stand = Animator.StringToHash("Stand");
+        private static readonly int Randomize = Animator.StringToHash("Randomize");
 
         [SerializeField]
         private List<MaskObject> maskObjects;
@@ -32,6 +37,8 @@ namespace Core
         [SerializeField] private Animator plaqueAnimator;
         [SerializeField] private PlayableDirector correctDirector;
         [SerializeField] private ParticleSystem smokeParticles;
+        [SerializeField] private ParticleSystem floorSmokeParticles;
+        [SerializeField] private ParticleSystem randomOrderParticles;
         [SerializeField] private PlayableDirector gameOverDirector;
         [SerializeField] private CrescendoManager crescendoManager;
         [SerializeField] private AudioSource sfxInteractSource;
@@ -51,7 +58,7 @@ namespace Core
         private int _currentDifficultyLevel;
         private bool _allowInteraction;
         private float _currentTime;
-        private MaskPart[] _levelOrder = { MaskPart.Eye, MaskPart.Nose, MaskPart.Access };
+        private readonly MaskPart[] _levelOrder = { MaskPart.Eye, MaskPart.Nose, MaskPart.Access };
         private int _orderIndex = 0;
         private bool _correctEye;
         private bool _correctNose;
@@ -121,6 +128,8 @@ namespace Core
                 {
                     _allowInteraction = false;
                     _score++;
+                    //RandomizeOrder();
+                    
                     crescendoManager.UpdateCrescendo(_score);
                     UpdateScoreText();
                     smokeParticles.Play();
@@ -132,18 +141,39 @@ namespace Core
                     
                     UpdateCurrentDifficultyLevel();
                     _currentTime *= timerReducer;
-                    timerReducer = _score switch
-                    {
-                        10 => 0.95f,
-                        20 => 0.9f,
-                        > 30 => 0.8f,
-                        _ => timerReducer
-                    };
+                    UpdateTimerReducer(30, 0.8f);
+                    UpdateTimerReducer(20, 0.9f);
+                    UpdateTimerReducer(10, 0.95f);
+                    UpdateTimerReducer(30, 0.8f);
+              
                     //Minimal time is 3 seconds, for now. Hardcoded!
                     _currentTime = Mathf.Max(3, _currentTime);
                 }
             }
-            
+
+            yield break;
+
+            void UpdateTimerReducer(int threshold, float newValue)
+            {
+                if (_score != threshold) return;
+                floorSmokeParticles.Play();
+                timerReducer = newValue;
+            }
+
+            void RandomizeOrder()
+            {
+                if (_score % 5 != 0) return;
+                if (RandomChanceUtils.GetChance(50.0f)) return;
+                randomOrderParticles.Play();
+                plaqueAnimator.SetTrigger(Randomize);
+                var asList = _levelOrder.ToList();
+                var one = RandomHelper<MaskPart>.GetRandomFromListWithIndex(asList, out var indexOne);
+                var two = RandomHelper<MaskPart>.GetRandomFromListWithIndex(asList, out var indexTwo);
+                    
+                _levelOrder[indexOne] = two;
+                _levelOrder[indexTwo] = one;
+                UpdateOrderPlaqueVisuals();
+            }
         }
 
         public void ReceiveInteraction(MaskObject interactObject)
@@ -186,6 +216,11 @@ namespace Core
             _orderIndex = ++_orderIndex % _levelOrder.Length;
             currentPartText.text = _levelOrder[_orderIndex].ToString();
             plaqueAnimator.SetTrigger(Stand);
+            UpdateOrderPlaqueVisuals();
+        }
+
+        private void UpdateOrderPlaqueVisuals()
+        {
             switch (_levelOrder[_orderIndex])
             {
                 case MaskPart.Eye:
